@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon backend/server.js"
+    "start": "nodemon backend/server.js", 
+    "build": "npm install --legacy-peers-deps && npm install --prefix frontend --legacy-peers-deps && npm run build --prefix frontend"
   },
   "author": "",
   "license": "ISC",
